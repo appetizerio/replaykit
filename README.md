@@ -1,10 +1,10 @@
 # appetizer-toolkit
 `appetizer-toolkit` is the core of [Appetizer](https://www.appetizer.io), which provides the ability to:
-* record touchscreen events from one devices and replay to many (aspect ratio must be the same)
-* control multiple devices concurrently (e.g., run a shell command, install an app, etc)
-* mirror the touchscreen events from one device to many in real time
+* record touchscreen events from one device and replay to many (aspect ratios must be the same)
+* control multiple devices concurrently (e.g., run a shell command, install an app, etc.)
+* mirror the touchscreen events from one device to many in real time (aspect ratios must be the same)
 
-`appetizer-toolkit` is a command line tool, available for Windows 7+, MacOS Mavericks+ and Linux. It also comes with SDK for [Python](https://github.com/appetizerio/appetizer-toolkit-py) and [Nodejs](https://github.com/appetizerio/appetizer-toolkit-js). `appetizer-toolkit` requires `adb` to be present in `PATH`.
+`appetizer-toolkit` is a command line tool, available on Windows 7+, MacOS Mavericks+ and Linux. It also comes with SDK for [Python](https://github.com/appetizerio/appetizer-toolkit-py) and [Nodejs](https://github.com/appetizerio/appetizer-toolkit-js). `appetizer-toolkit` requires `adb` to be present in `PATH`.
 
 Please submit an issue for bugs, enhancements and feature requests. Pull requests are welcomed too.
 
@@ -61,7 +61,7 @@ optional arguments:
 ```
 
 ## ADB related
-`adb` from Android SDK is required for `appetizer-toolkit`. The toolkit itself can detects the existence of the adb binary and control the adb server with it.
+`adb` from Android SDK is required for `appetizer-toolkit`. The toolkit itself can detect the existence of the adb binary and control the adb server with it.
 ```
 usage: appetizer-toolkit-linux-x64 adb [-h]
                                        
