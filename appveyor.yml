@@ -1,0 +1,3 @@
+build_script:
+  - ./appetizer-toolkit-win32-x64.exe version
+
