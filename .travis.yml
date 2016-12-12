@@ -1,11 +1,11 @@
+dist: trusty
+sudo: false
 language: android
 python:
   - "2.7" 
 os:
   - linux
   - osx
-before_script:
-  - apt install libc6
 script:
   - ./nixtest.sh
 
