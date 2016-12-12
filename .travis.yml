@@ -4,6 +4,8 @@ python:
 os:
   - linux
   - osx
+before_script:
+  - apt install libc6
 script:
   - ./nixtest.sh
 
