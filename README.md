@@ -8,6 +8,9 @@
 
 Please submit an issue for bugs, enhancements and feature requests. Pull requests are welcomed too.
 
+## Installation
+For Linux and MacOS, download the binary(appetiezr-toolkit-darwin-x64 for MacOS and appetizer-toolkit-linux-x64 for Linux) and add it to the PATH; For Windows, download the zip file(appetizer-toolkit-win.zip), extract it anywhere you like and add the directory to the PATH. Now enjoy it!
+
 ```
 usage: appetizer-toolkit-linux-x64 [-h] {version,trace,adb,devices,plan} ...
 
