@@ -9,7 +9,7 @@
 Please submit an issue for bugs, enhancements and feature requests. Pull requests are welcomed too.
 
 ## Installation
-For Linux and MacOS, download the binary(appetiezr-toolkit-darwin-x64 for MacOS and appetizer-toolkit-linux-x64 for Linux) and add it to the PATH; For Windows, download the zip file(appetizer-toolkit-win.zip), extract it anywhere you like and add the directory to the PATH. Now enjoy it!
+For Linux and MacOS, download the executable (`appetiezr-toolkit-darwin-x64` for MacOS and `appetizer-toolkit-linux-x64` for Linux); For Windows, download and unzio `appetizer-toolkit-win.zip`. You might want to add to PATH to use the tool globally.
 
 ```
 usage: appetizer-toolkit-linux-x64 [-h] {version,trace,adb,devices,plan} ...
@@ -43,6 +43,8 @@ optional arguments:
   -h, --help            show this help message and exit
 ```
 
+[![Record and replay](https://i.vimeocdn.com/video/583660790_640.jpg)](https://vimeo.com/176421640)
+
 ## Control Multiple Devices and Mirror Touchscreen Events
 To work with multiple devices, use `appetizer-toolkit-* devices`:
 ```
@@ -62,6 +64,9 @@ positional arguments:
 optional arguments:
   -h, --help            show this help message and exit
 ```
+
+Mirror the touchscreen events from one device to many in real-time.
+[![mirroring](https://i.vimeocdn.com/video/585120374_640.jpg)](https://vimeo.com/176421482)
 
 ## ADB related
 `adb` from Android SDK is required for `appetizer-toolkit`. The toolkit itself can detect the existence of the adb binary and control the adb server with it.
