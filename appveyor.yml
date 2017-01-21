@@ -1,3 +1,3 @@
 build_script:
-  - win32/appetizer.exe version
+  - ./win32/appetizer.exe version
 
