@@ -6,13 +6,13 @@
 
 `appetizer-toolkit` is a command line tool, available on Windows 7+, MacOS Mavericks+ and Linux. It also comes with SDK for [Python](https://github.com/appetizerio/appetizer-toolkit-py) and [Nodejs](https://github.com/appetizerio/appetizer-toolkit-js). `appetizer-toolkit` requires `adb` to be present in `PATH`.
 
-Please submit an issue for bugs, enhancements and feature requests. Pull requests are welcomed too.
+Please submit issues for bug reports, enhancements and feature requests. Pull requests are welcomed too.
 
 ## Installation
-For Linux and MacOS, download the executable (`appetiezr-toolkit-darwin-x64` for MacOS and `appetizer-toolkit-linux-x64` for Linux); For Windows, download and unzio `appetizer-toolkit-win.zip`. You might want to add to PATH to use the tool globally.
+The executable file can be found in the `darwin/` for macOS, `win32/` for Windows and `linux/` for Ubuntu, Fedora and Centos. You might want to add to PATH to use the tool globally. Linux and macOS build are both 64-bit and Windows build is 32-bit (compatible with 64-bit as WOW)
 
 ```
-usage: appetizer-toolkit-linux-x64 [-h] {version,trace,adb,devices,plan} ...
+usage: appetizer [-h] {version,trace,adb,devices,plan} ...
 
 positional arguments:
   {version,trace,adb,devices,plan}
@@ -29,9 +29,9 @@ optional arguments:
 ```
 
 ## Record and Replay
-To record and replay touchscreen events, use `appetizer-toolkit-* trace`:
+To record and replay touchscreen events, use `appetizer trace`:
 ```
-usage: appetizer-toolkit-linux-x64 trace [-h] {info,replay,record} ...
+usage: appetizer trace [-h] {info,replay,record} ...
 
 positional arguments:
   {info,replay,record}  actions
@@ -46,9 +46,9 @@ optional arguments:
 [![Record and replay](https://i.vimeocdn.com/video/583660790_640.jpg)](https://vimeo.com/176421640)
 
 ## Control Multiple Devices and Mirror Touchscreen Events
-To work with multiple devices, use `appetizer-toolkit-* devices`:
+To work with multiple devices, use `appetizer devices`:
 ```
-usage: appetizer-toolkit-linux-x64 devices [-h]
+usage: appetizer devices [-h]
                                            {list,screenshot,mirror,control}
                                            ...
 
@@ -71,7 +71,7 @@ Mirror the touchscreen events from one device to many in real-time.
 ## ADB related
 `adb` from Android SDK is required for `appetizer-toolkit`. The toolkit itself can detect the existence of the adb binary and control the adb server with it.
 ```
-usage: appetizer-toolkit-linux-x64 adb [-h]
+usage: appetizer adb [-h]
                                        
                                        {check-server,start-server,kill-server,detectadb}
                                        ...
