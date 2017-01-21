@@ -1,4 +1,3 @@
 build_script:
-  - unzip appetizer-toolkit-win.zip
-  - appetizer-toolkit-win.exe version
+  - win32/appetizer.exe version
 
