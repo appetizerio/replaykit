@@ -1,4 +1,6 @@
 # appetizer-toolkit [![Build Status](https://travis-ci.org/appetizerio/appetizer-toolkit.svg?branch=master)](https://travis-ci.org/appetizerio/appetizer-toolkit) [![Windows Build](https://ci.appveyor.com/api/projects/status/github/appetizerio/appetizer-toolkit)](https://ci.appveyor.com/project/mingyuan-xia/appetizer-toolkit)
+[中文说明](./READNE.cn.md)
+
 `appetizer-toolkit` is the core of [Appetizer](https://www.appetizer.io), which provides the ability to:
 * record touchscreen events from one device and replay to many (aspect ratios must be the same)
 * control multiple devices concurrently (e.g., run a shell command, install an app, etc.)
@@ -9,7 +11,7 @@
 Please submit issues for bug reports, enhancements and feature requests. Pull requests are welcomed too.
 
 ## Installation
-The executable file can be found in the `darwin/` for macOS, `win32/` for Windows and `linux/` for Ubuntu, Fedora and Centos. You might want to add to PATH to use the tool globally. Linux and macOS build are both 64-bit and Windows build is 32-bit (compatible with 64-bit as WOW)
+The executable file can be found in the `darwin/` for MacOS, `win32/` for Windows and `linux/` for Ubuntu, Fedora and CentOS. You might want to add to PATH to use the tool globally. Linux and MacOS build are both 64-bit and Windows build is 32-bit (compatible with 64-bit as WOW)
 
 ```
 usage: appetizer [-h] {version,trace,adb,devices,plan} ...
@@ -43,6 +45,7 @@ optional arguments:
   -h, --help            show this help message and exit
 ```
 
+Record and replay demo:
 [![Record and replay](https://i.vimeocdn.com/video/583660790_640.jpg)](https://vimeo.com/176421640)
 
 ## Control Multiple Devices and Mirror Touchscreen Events
@@ -65,7 +68,7 @@ optional arguments:
   -h, --help            show this help message and exit
 ```
 
-Mirror the touchscreen events from one device to many in real-time.
+Mirror the touchscreen events from one device to many in real-time demo:
 [![mirroring](https://i.vimeocdn.com/video/585120374_640.jpg)](https://vimeo.com/176421482)
 
 ## ADB related
