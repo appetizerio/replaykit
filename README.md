@@ -1,5 +1,5 @@
 # appetizer-toolkit [![Build Status](https://travis-ci.org/appetizerio/appetizer-toolkit.svg?branch=master)](https://travis-ci.org/appetizerio/appetizer-toolkit) [![Windows Build](https://ci.appveyor.com/api/projects/status/github/appetizerio/appetizer-toolkit)](https://ci.appveyor.com/project/mingyuan-xia/appetizer-toolkit)
-[中文说明](./READNE.cn.md)
+[中文说明](./README.cn.md)
 
 `appetizer-toolkit` is the core of [Appetizer](https://www.appetizer.io), which provides the ability to:
 * record touchscreen events from one device and replay to many (aspect ratios must be the same)
