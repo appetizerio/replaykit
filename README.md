@@ -59,12 +59,13 @@ Next replay the trace back to see how it goes:
 appetizer trace replay mytrace.trace serialno
 ```
 You will see something like the video below:
+
 [![Record and replay](https://i.vimeocdn.com/video/583660790_640.jpg)](https://vimeo.com/176421640)
 
 If you want to replay to more than one devices, simply replace `serialno` with a comma-separated serialno list like `serialno1, serialno2`.
 
 ## Mirror Touchscreen Events
-With the toolkit, you can mirror the touchscreen events from one device to other device in real time.
+With the toolkit, you can mirror the touchscreen events from one device to other devices in real time.
 ```
 appetizer devices mirror <from_device> <to_device>
 ```
@@ -73,6 +74,7 @@ Make sure all involving devices have the same aspect ratio. Otherwise the comman
 For devices with the same aspect ratio, the touchscreen events will automatically scale to adapt to the screen resolution.
 
 Here is a demo:
+
 [![mirroring](https://i.vimeocdn.com/video/585120374_640.jpg)](https://vimeo.com/176421482)
 
 ## ADB related
