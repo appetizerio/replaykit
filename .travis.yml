@@ -8,4 +8,6 @@ os:
   - osx
 script:
   - ./nixtest.sh
+notifications:
+  slack: appcademy:iHt6U7lzeWrIvYzahPT6rXIz
 
