@@ -6,7 +6,7 @@
 * control multiple devices concurrently (e.g., run a shell command, install an app, etc.)
 * mirror the touchscreen events from one device to many in real time (aspect ratios must be the same)
 
-`replaykit` can work on Windows 7+, MacOS Mavericks+ and Linux. To integrate it with existing CI infrastructure, consider the [Python SDK](https://github.com/appetizerio/replaykit-py). 
+`replaykit` can work on Windows 7+, MacOS Mavericks+ and Linux. To integrate it with existing CI infrastructure, consider the [Python SDK](https://github.com/appetizerio/replaykit.py). 
 
 Please submit issues for bug reports, enhancements and feature requests. Pull requests are welcomed too.
 

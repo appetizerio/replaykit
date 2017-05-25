@@ -1,15 +1,15 @@
 # replaykit [![Build Status](https://travis-ci.org/appetizerio/replaykit.svg?branch=master)](https://travis-ci.org/appetizerio/replaykit) [![Windows Build](https://ci.appveyor.com/api/projects/status/github/appetizerio/replaykit)](https://ci.appveyor.com/project/mingyuan-xia/replaykit)
-`replaykit` 是 [Appetizer](https://www.appetizer.io) 的核心功能，它提供了如下功能:
+`replaykit` 是 [Appetizer](https://appetizer.io) 的核心功能，它提供了如下功能:
 * 从单台设备录制屏幕触碰事件，在多台设备上重放（需要屏幕横宽比一致）
 * 同时控制多台设备（例如, 运行一个 shell 命令，安装 apk 等）
 * 将一台设备的屏幕触碰事件，镜像操作到多台设备上（需要屏幕横宽比一致）
 
-`replaykit` 是一个命令行工具，能够运行在 Windows 7+，MacOS Mavericks+ 和 Linux 操作系统上。一同提供的还包括 [Python SDK](https://github.com/appetizerio/replaykit-py) 和 [Nodejs SDK](https://github.com/appetizerio/replaykit-js)。 `replaykit` 要求 `adb` 已添加到 `PATH` 环境变量上.
+`replaykit` 是一个命令行工具，能够运行在 Windows 7+，MacOS Mavericks+ 和 Linux 操作系统上。一同提供的还包括 [Python SDK](https://github.com/appetizerio/replaykit.py) 和 [Nodejs SDK](https://github.com/appetizerio/replaykit.js)。 `replaykit` 要求 `adb` 已添加到 `PATH` 环境变量上.
 
 欢迎提交关于 bug，功能和特性的 issues 以及 Pull requests。
 
 ## 安装
-不同系统的可执行文件可以在如下文件夹下找到， MacOS 系统的在 `darwin/` 文件夹下， Windows 系统的在 `win32/` 文件夹下， Ubuntu Fedora 和 CentOS 系统的在 `linux/` 文件夹下。 可以将路径添加到 `PATH` 下全局运行。 Linux 和 MacOS 需要在64位环境下运行，Windows 可以在32位环境下运行（兼容64位环境)
+不同系统的可执行文件可以在如下文件夹下找到， MacOS 系统的在 `darwin/` 文件夹下， Windows 系统的在 `win32/` 文件夹下， Ubuntu Fedora 和 CentOS 系统的在 `linux/` 文件夹下。 可以将路径添加到 `PATH` 下全局运行。 Linux 和 MacOS 需要在64位环境下运行，Windows 可以在64位环境下运行（兼容32位环境)
 
 ```
 用法: appetizer [-h] {version,trace,adb,devices,plan} ...
