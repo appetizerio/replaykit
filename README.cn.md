@@ -1,10 +1,10 @@
-# appetizer-toolkit [![Build Status](https://travis-ci.org/appetizerio/appetizer-toolkit.svg?branch=master)](https://travis-ci.org/appetizerio/appetizer-toolkit) [![Windows Build](https://ci.appveyor.com/api/projects/status/github/appetizerio/appetizer-toolkit)](https://ci.appveyor.com/project/mingyuan-xia/appetizer-toolkit)
-`appetizer-toolkit` 是 [Appetizer](https://www.appetizer.io) 的核心功能，它提供了如下功能:
+# replaykit [![Build Status](https://travis-ci.org/appetizerio/replaykit.svg?branch=master)](https://travis-ci.org/appetizerio/replaykit) [![Windows Build](https://ci.appveyor.com/api/projects/status/github/appetizerio/replaykit)](https://ci.appveyor.com/project/mingyuan-xia/replaykit)
+`replaykit` 是 [Appetizer](https://www.appetizer.io) 的核心功能，它提供了如下功能:
 * 从单台设备录制屏幕触碰事件，在多台设备上重放（需要屏幕横宽比一致）
 * 同时控制多台设备（例如, 运行一个 shell 命令，安装 apk 等）
 * 将一台设备的屏幕触碰事件，镜像操作到多台设备上（需要屏幕横宽比一致）
 
-`appetizer-toolkit` 是一个命令行工具，能够运行在 Windows 7+，MacOS Mavericks+ 和 Linux 操作系统上。一同提供的还包括 [Python SDK](https://github.com/appetizerio/appetizer-toolkit-py) 和 [Nodejs SDK](https://github.com/appetizerio/appetizer-toolkit-js)。 `appetizer-toolkit` 要求 `adb` 已添加到 `PATH` 环境变量上.
+`replaykit` 是一个命令行工具，能够运行在 Windows 7+，MacOS Mavericks+ 和 Linux 操作系统上。一同提供的还包括 [Python SDK](https://github.com/appetizerio/replaykit-py) 和 [Nodejs SDK](https://github.com/appetizerio/replaykit-js)。 `replaykit` 要求 `adb` 已添加到 `PATH` 环境变量上.
 
 欢迎提交关于 bug，功能和特性的 issues 以及 Pull requests。
 
@@ -69,7 +69,7 @@
 [![mirroring](https://i.vimeocdn.com/video/585120374_640.jpg)](http://www.bilibili.com/video/av6725203/index_3.html)
 
 ## ADB 相关
-Android SDK 的 `adb` 是 `appetizer-toolkit` 的必要依赖。toolkit 本身可以检测是否有 adb 二进制环境并且可以控制 adb server。
+Android SDK 的 `adb` 是 `replaykit` 的必要依赖。replaykit 本身可以检测是否有 adb 二进制环境并且可以控制 adb server。
 ```
 用法: appetizer adb [-h]
                                        

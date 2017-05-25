@@ -1,22 +1,22 @@
-# appetizer-toolkit [![Build Status](https://travis-ci.org/appetizerio/appetizer-toolkit.svg?branch=master)](https://travis-ci.org/appetizerio/appetizer-toolkit) [![Windows Build](https://ci.appveyor.com/api/projects/status/github/appetizerio/appetizer-toolkit)](https://ci.appveyor.com/project/mingyuan-xia/appetizer-toolkit)
+# replaykit [![Build Status](https://travis-ci.org/appetizerio/replaykit.svg?branch=master)](https://travis-ci.org/appetizerio/replaykit) [![Windows Build](https://ci.appveyor.com/api/projects/status/github/appetizerio/replaykit)](https://ci.appveyor.com/project/mingyuan-xia/replaykit)
 [中文说明](./README.cn.md)
 
-`appetizer-toolkit` is a command line tool intended for mobile continuous integration, which provides the ability to:
+`replaykit` is a command line tool intended for mobile continuous integration, which provides the ability to:
 * record touchscreen events from one device and replay to many (aspect ratios must be the same)
 * control multiple devices concurrently (e.g., run a shell command, install an app, etc.)
 * mirror the touchscreen events from one device to many in real time (aspect ratios must be the same)
 
-`appetizer-toolkit` can work on Windows 7+, MacOS Mavericks+ and Linux. To integrate it with existing CI infrastructure, consider the [Python SDK](https://github.com/appetizerio/appetizer-toolkit-py). 
+`replaykit` can work on Windows 7+, MacOS Mavericks+ and Linux. To integrate it with existing CI infrastructure, consider the [Python SDK](https://github.com/appetizerio/replaykit-py). 
 
 Please submit issues for bug reports, enhancements and feature requests. Pull requests are welcomed too.
 
 ## Installation
-The executable file can be found in the `darwin/` for MacOS, `win32/` for Windows and `linux/` for Ubuntu, Fedora and CentOS. You might want to add to PATH to use the tool globally. Linux and MacOS build are both 64-bit and Windows build is 32-bit (compatible with 64-bit as WOW). `appetizer-toolkit` requires `adb` to be present in `PATH`. You can install the Android SDK and ensure `<sdk>/platform-tools` is in your PATH.
+The executable file can be found in the `darwin/` for MacOS, `win32/` for Windows and `linux/` for Ubuntu, Fedora and CentOS. You might want to add to PATH to use the tool globally. Linux and MacOS build are both 64-bit and Windows build is 32-bit (compatible with 64-bit as WOW). `replaykit` requires `adb` to be present in `PATH`. You can install the Android SDK and ensure `<sdk>/platform-tools` is in your PATH.
 
 ## Control Multiple Devices
 Suppose you have several devices attached to the development machine via USB and you want them to perform the same action.
 
-First, make sure the toolkit recognizes all of them devices:
+First, make sure replaykit recognizes all of them devices:
 ```
 ./darwin/appetizer devices list
 ```
@@ -42,7 +42,7 @@ And, just in case you need them:
 * [Common ADB shell commands](http://stackoverflow.com/documentation/android/1051/adb-android-debug-bridge)
 
 ## Record and Replay touchscreen events
-The toolkit can record touchscreen events from one device and replay back to many to automate stuff.
+Replaykit can record touchscreen events from one device and replay back to many to automate stuff.
 ```
 appetizer trace record --device serailno mytrace.trace
 ```
@@ -65,7 +65,7 @@ You will see something like the video below:
 If you want to replay to more than one devices, simply replace `serialno` with a comma-separated serialno list like `serialno1, serialno2`.
 
 ## Mirror Touchscreen Events
-With the toolkit, you can mirror the touchscreen events from one device to other devices in real time.
+With replaykit, you can mirror the touchscreen events from one device to other devices in real time.
 ```
 appetizer devices mirror <from_device> <to_device>
 ```
@@ -78,7 +78,7 @@ Here is a demo:
 [![mirroring](https://i.vimeocdn.com/video/585120374_640.jpg)](https://vimeo.com/176421482)
 
 ## ADB related
-Finally, the toolkit provides some commands to check the ADB environment.
+Finally, replaykit provides some commands to check the ADB environment.
 ```
 appetizer adb start-server  # start the ADB server
 appetizer adb kill-server  # kill the ADB server
