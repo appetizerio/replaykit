@@ -52,7 +52,7 @@ Check if the trace is good:
 ```
 appetizer trace info mytrace.trace
 ```
-Again, it shows a JSON about the recorded trace, showing the screen resolution, time length, how many fingers, etc.
+Again, it shows a JSON about the recorded trace, showing the screen resolution, time length, how many fingers, etc. To modify the description of this trace, use `appetizer trace describe mytrace.trace "the description to be added"`.
 
 Next replay the trace back to see how it goes:
 ```

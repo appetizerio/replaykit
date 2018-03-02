@@ -31,7 +31,7 @@
 ## 录制和重放
 录制或重放触屏事件，输入 `appetizer trace`:
 ```
-用法: appetizer trace [-h] {info,replay,record} ...
+用法: appetizer trace [-h] {info,describe,replay,record} ...
 
 参数说明:
   {info,replay,record}  操作
