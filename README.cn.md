@@ -12,7 +12,7 @@
 不同系统的可执行文件可以在如下文件夹下找到， MacOS 系统的在 `darwin/` 文件夹下， Windows 系统的在 `win32/` 文件夹下， Ubuntu Fedora 和 CentOS 系统的在 `linux/` 文件夹下。 可以将路径添加到 `PATH` 下全局运行。 Linux 和 MacOS 需要在64位环境下运行，Windows 可以在64位环境下运行（兼容32位环境)
 
 ```
-用法: appetizer [-h] {version,trace,adb,devices,plan} ...
+用法: replaykit [-h] {version,trace,adb,devices,plan} ...
 
 参数说明:
   {version,trace,adb,devices,plan}
@@ -29,9 +29,9 @@
 ```
 
 ## 录制和重放
-录制或重放触屏事件，输入 `appetizer trace`:
+录制或重放触屏事件，输入 `replaykit trace`:
 ```
-用法: appetizer trace [-h] {info,describe,replay,record} ...
+用法: replaykit trace [-h] {info,describe,replay,record} ...
 
 参数说明:
   {info,replay,record}  操作
@@ -47,9 +47,9 @@
 [![Record and replay](https://i.vimeocdn.com/video/583660790_640.jpg)](http://www.bilibili.com/video/av6725203/index_2.html)
 
 ## 控制多设备和镜像操作
-同时控制多台设备，输入 `appetizer devices`:
+同时控制多台设备，输入 `replaykit devices`:
 ```
-用法: appetizer devices [-h]
+用法: replaykit devices [-h]
                                            {list,screenshot,mirror,control}
                                            ...
 
@@ -71,7 +71,7 @@
 ## ADB 相关
 Android SDK 的 `adb` 是 `replaykit` 的必要依赖。replaykit 本身可以检测是否有 adb 二进制环境并且可以控制 adb server。
 ```
-用法: appetizer adb [-h]
+用法: replaykit adb [-h]
                                        
                                        {check-server,start-server,kill-server,detectadb}
                                        ...

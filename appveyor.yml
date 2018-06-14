@@ -1,4 +1,5 @@
 build_script:
   - cd win32
-  - appetizer.exe version
+  - replaykit.exe version
+  - replaykit.exe trace info ./test.trace
 
