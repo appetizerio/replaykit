@@ -1,5 +1,7 @@
 build_script:
   - cd win32
   - replaykit.exe version
-  - replaykit.exe trace info ./test.trace
+  - replaykit.exe trace info ../test.trace
+  - replaykit.exe trace describe ../test.trace haha
+  - replaykit.exe trace info ../test.trace
 
